@@ -1,10 +1,8 @@
-﻿namespace Lab2;
+namespace Lab2;
 
 public class BookManager
 {
-    private List<Book> myBooks = new List<Book>();
-
-    public void AddBookByTitle()
+    public void AddBookByTitle(Borrower borrower)
     {
         Console.Write("Enter the book title: ");
         string title = Console.ReadLine() ?? "";
@@ -14,7 +12,7 @@ public class BookManager
 
         if (book != null)
         {
-            myBooks.Add(book);
+            borrower.myBooks.Add(book);
             Console.WriteLine($"Book '{book.Title}' added to your collection.");
         }
     }
