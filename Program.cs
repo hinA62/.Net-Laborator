@@ -1,4 +1,4 @@
-﻿using Lab2;
+using Lab2;
 
 class LibraryApp
 {
@@ -14,7 +14,7 @@ class LibraryApp
         
         BookManager bookManager = new BookManager();
         bookManager.DisplayLibraryBooks();
-        bookManager.AddBookByTitle();
+        bookManager.AddBookByTitle(borrower1);
         bookManager.WhatIs(borrower2);
         bookManager.WhatIs(Book.libraryBooks.First());
         bookManager.WhatIs("dsb");
